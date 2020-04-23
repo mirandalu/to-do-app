@@ -1,0 +1,27 @@
+header {
+  background: url(../images/to-do-list.jpg) center / cover;
+  height: 40vh;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: darkslategrey;
+  font-weight: bold;
+}
+
+form {
+  margin: auto;
+  display: block;
+  width: 400px;
+  text-align: center;
+
+}
+
+ul {
+  margin: auto;
+  padding-top: 10px;
+  display: block;
+  text-align: left;
+  width: 300px;
+}

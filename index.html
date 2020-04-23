@@ -3,20 +3,32 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To-Do App</title>
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-green.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+    <header class="mdl-layout__header mdl-layout__header--transparent">
     <h1>To-Do App</h1>
     </header>
 
+    <main>
     <form id="addToDoForm">
-      <label for="newToDoText">New To-Do:</label>
-      <input type="text" id="newToDoText">
-      <button type="submit">Add To-Do!</button>
+      <div class="mdl-textfield mdl-js-textfield">
+        <label class="mdl-textfield__label" for="newToDoText">Add a new To-Do...</label>
+        <input class="mdl-textfield__input" type="text" id="newToDoText">
+      </div>
+    <!-- Accent-colored raised button with Ripples -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Add To-Do!</button>
     </form>
 
     <ul id="toDoList">
     </ul>
 
     <script src="app.js"></script>
+    </main>
   </body>
 </html>
